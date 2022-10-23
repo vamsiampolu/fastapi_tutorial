@@ -1,2 +1,2 @@
 [MASTER]
-; init-hook='import sys; sys.path.append("~/Library/Caches/pypoetry/virtualenvs/python-fast-api-tutorial-fASAfmy7-py3.10/bin")'
+; init-hook='import sys; sys.path.append("~/Library/Caches/pypoetry/virtualenvs/python-fast-api-tutorial-fASAfmy7-py3.10/bin"); sys.path.append(".")'

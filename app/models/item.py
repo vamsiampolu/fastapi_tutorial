@@ -1,7 +1,8 @@
 """A pydantic model that represents an Item in a store or offer"""
 
 from pydantic import BaseModel, Field
-from image_model import Image
+
+from .image import Image
 
 
 class Item(BaseModel):
@@ -15,3 +16,16 @@ class Item(BaseModel):
     tax: float | None = Field(default=None)
     tags: set[str] = Field(default=set())
     image: Image | None = None
+
+
+class BaseItem(BaseModel):
+    description: str
+    type: str
+
+
+class CarItem(BaseItem):
+    type = "car"
+
+
+class PlaneItem(BaseItem):
+    type = "plane"

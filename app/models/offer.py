@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-from item_model import Item
+
+from .item import Item
 
 
 class Offer(BaseModel):
